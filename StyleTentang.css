@@ -1,0 +1,117 @@
+body {
+    font-family: sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+.u{
+  position:absolute;
+  top: 15px;
+}
+
+.Navigasi {
+    position: absolute;
+    left: 33%;
+    width: 15vw; /* Buat navbar selebar layar */
+    display: flex;
+    justify-content: center; /* Pusatkan navbar secara horizontal */
+    padding: 10px;
+}
+
+.ul-navbar {
+    display: flex;
+    justify-content: space-between; /* Buat jarak antar elemen secara merata */
+    list-style-type: none;
+    width: 90%; /* Buat ul selebar 90% dari layar, agar ada margin di kiri dan kanan */
+    margin: 0;
+    padding: 0;
+    gap: 2vw; /* Jarak antar elemen akan menyesuaikan 2% dari lebar layar */
+}
+
+.li-navbar {
+    width: auto; /* Atur width otomatis */
+    padding: 10px; /* Tambahkan padding untuk meningkatkan area klik */
+    color: black;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+    flex-grow: 1; /* Biarkan elemen tumbuh untuk mengisi ruang yang tersedia */
+    text-align: center; /* Agar teks di dalam elemen navbar berada di tengah */
+    font-size: 15px;transition: all 0.3s ease 0.2s; /* Menambahkan delay 0.2 detik */
+}
+
+.li-navbar:hover {
+    background-color: #d12929;
+    border-radius: 10px;
+    transform: translateY(-5px) scale(1.3); /* Naik sedikit dan membesar */
+}
+
+.a-navbar {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.li-navbar:hover .a-navbar {
+    color:black; /* Ubah warna link menjadi hitam saat hover */
+}
+
+.gambar{
+  position: absolute;
+  top: 50px;
+  left: 130px;
+ width: 300px;
+ height: 300px;
+ border-radius: 50%;
+ z-index: -1;
+}
+
+p{
+  position: relative;
+  top: 130px;
+  font-size: 15px;
+  left: 5px;
+  display: block;
+  margin-left: 20px;
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+}
+.bi-instagram {
+  position: relative;
+  left: 320px;
+  top: 90px;
+  z-index: 5;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.bi-instagram:hover {
+  transform: scale(1.5) !important;
+  color: #E1306C !important;
+}
+
+.bi-tiktok{
+  position: relative;
+  left: 240px;
+  top: 90px;
+  z-index: 5;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.bi-tiktok:hover {
+  transform: scale(1.5) !important;
+  color: #25F4EE !important;
+}
+
+.bi-tiktok {
+  border: 2px solid #25F4EE; /* Warna biru khas TikTok */
+  border-radius: 5px;
+  background-color: #010101;
+}
+
+.bi-instagram {
+  border: 2px solid #E1306C; /* Warna merah muda khas Instagram */
+  border-radius: 5px;
+  background-color: #ff4181;
+}
